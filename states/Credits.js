@@ -19,7 +19,7 @@ Credits.prototype = {
         this.stage.disableVisibilityChange = true;
         game.add.sprite(0, 0, 'splash-bg');
 
-        this.addCredit('kod, grafika, muzyka', 'Don Maciej aka. Eutrepe');
+        this.addCredit('kod, grafika', 'Don Maciej aka. Eutrepe');
         
         this.addMenuOption('Wstecz', function (target) {
             this.game.state.start("GameMenu");

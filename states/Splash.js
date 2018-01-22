@@ -4,6 +4,11 @@ var Splash = function () {};
     Splash.prototype = {
 
     loadScripts: function () {
+        this.status.setText('Czytanie ze zrozumieniem').setStyle({
+            font: '18pt Snubnose',
+            fill: '#ffffff'}
+        );
+
         game.load.script('style', 'lib/style.js');
         game.load.script('mixins', 'lib/mixins.js');
         game.load.script('slider', 'lib/PhaseSlider.js');
@@ -22,12 +27,21 @@ var Splash = function () {};
     },
 
     loadBgm: function () {
+        this.status.setText('Obrzezanie emerytów').setStyle({
+            font: '18pt Snubnose',
+            fill: '#ffffff'}
+        );
         // thanks Kevin Macleod at http://incompetech.com/
         game.load.audio('dangerous', 'assets/bgm/Dangerous.mp3');
         game.load.audio('exit', 'assets/bgm/Exit the Premises.mp3');
     },
 
     loadImages: function () {
+        this.status.setText('Nawracanie ateistów').setStyle({
+            font: '18pt Snubnose',
+            fill: '#ffffff'}
+        );
+
         game.load.image('gamemenu-bg', 'assets/images/gamemenu-bg.png');
         game.load.image('author-bg', 'assets/images/author-bg.jpg');
         game.load.image('info-bg', 'assets/images/info-bg.png');
@@ -51,6 +65,11 @@ var Splash = function () {};
     },
 
     loadFonts: function () {
+        this.status.setText('Produkcja świerzaków').setStyle({
+            font: '18pt Snubnose',
+            fill: '#ffffff'}
+        );
+
         WebFontConfig = {
             custom: {
                 families: ['TheMinion', 'Snubnose'],

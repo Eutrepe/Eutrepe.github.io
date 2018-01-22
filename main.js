@@ -5,7 +5,8 @@ var game = new Phaser.Game(400, 540, Phaser.AUTO, 'game'),
     playSound: true,
     playMusic: true
   },  
-  musicPlayer;
+  musicPlayer,
+  totalPoints = 0;
 
 Main.prototype = {
 

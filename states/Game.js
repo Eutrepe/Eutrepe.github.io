@@ -272,7 +272,12 @@ Game.prototype = {
                 case 'spaczenie': 
                     text  = 'Koniec';
                     color = '#cfa404';
-                    game.state.start("GameOver");
+                    
+                    totalPoints = this.points;
+
+                    setTimeout(function(){
+                        game.state.start('GameOver', true, false, totalPoints);
+                    }, 300)
                     break;
             }
             
